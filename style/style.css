@@ -1,0 +1,227 @@
+@font-face {
+    font-family: Digital;
+    src: url('../font/Digital.TTF');
+}
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {  
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #254049;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #eed5af;
+}
+*::-webkit-scrollbar-button {
+    height: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #6b9192;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.return {
+    width: 50px!important;
+    height: 50px!important;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 88%;
+    left: 1%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2.5em;
+    box-sizing: content-box;
+}
+button, .return {
+    background: #254049;
+    border: 2px solid #04181f;
+    box-shadow: 1px 1px 1px 1px #3b565d inset;
+    outline: unset;
+    color: #febc48;
+    cursor: pointer;
+    font-weight: bold;
+}
+.return:active {
+    background: #213941;
+    box-shadow: 0px 0px 10px 1px #182a30a1 inset;
+}
+button:hover, .return:hover {
+    background: #2b4852;
+}
+button:active {
+    background: #213941;
+    box-shadow: 1px 1px 1px 1px #2e4449;
+}
+#content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.new_timer {
+    width: 100%;
+    height: 5%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+}
+#chronometer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.timer_field {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #111f22;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 3px #16202257;
+    background: linear-gradient(to bottom right, #29464e, #1b2e34,#142327 );
+    text-align:center;
+}
+.screen {
+    width: 95%;
+    height: 60%;
+    margin: 2.5%;
+    padding: 2.5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #29464e, #1a2e33,#2a271f5b );
+    border: 3px solid #051719;
+    box-shadow: 0px 0px 0px 2px #3b565d;
+    border-radius: 10px;
+    font-family: Digital;
+}
+.display_characters {
+    width: 80%;
+    height: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1em;
+    font-weight: bold;
+    color: #febb4894;
+}
+.display_characters_top {
+    margin: 7.5% 0 0 0;
+}
+.display_characters_bot {
+    margin: 0 0 7.5% 0;
+}
+.display_characters span {
+    cursor: pointer;
+}
+.display_time {
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: #febc48;
+}
+.commands {
+    width: 90%;
+    height: 20%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.commands button {
+    width: 25%;
+    height: 75%;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+.logs {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #111f22;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 3px #16202257;
+    background: linear-gradient(to bottom right, #29464e, #1b2e34,#142327 );
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logs button {
+    width: 90%;
+    height: 15%;
+    border-radius: 10px;
+    font-size: 0.7em;
+}
+.current_time_logs {
+    width: 90%;
+    height: 80%;
+    margin-top: 5%;
+    overflow-x:hidden;
+    overflow-y: auto;
+    color: #ffe6bb;
+}
+.current_time_logs p {
+    margin: 2px 0;
+    text-align: center;
+}
+@media(max-width: 1080px){
+    .timer_field{
+        width: 90%;
+    }
+    .timer {
+        width: 65%;
+        height: 80%;
+    }
+    .screen {
+        padding: 1% 0;
+    }
+    .display_characters {
+        font-size: 0.7em;
+    }
+    .commands button {
+        font-size: 0.7em;
+    }
+    .logs {
+        width: 30%;
+        height: 80%;
+        padding: 5px;
+    }
+    .logs button {
+        width: 100%;
+        font-size: 0.5em;
+    }
+    .current_time_logs {
+        font-size: 0.8em;
+    }
+    .display_time {
+        font-size: 3em;
+    }
+}
