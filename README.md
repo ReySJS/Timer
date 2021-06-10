@@ -1,3 +1,3 @@
 # Timer
 
-Timer built with javascript classes
+Timer built with javascript class
