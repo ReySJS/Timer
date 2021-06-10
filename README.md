@@ -1,2 +1,3 @@
-# timer
- Timer with Javascript Class
+# Timer
+
+Timer built with javascript classes
