@@ -15,5 +15,5 @@ Timer developed in Javascript with a deadline of 16 hours in the second month of
 ## 📐 Layout
 
 <p align="center">
-  <img alt="" src="https://user-images.githubusercontent.com/78664426/123469950-1bb6b180-d5ca-11eb-99ed-dd8e7a1f0240.png" />
+  <img alt="Layout" src="https://user-images.githubusercontent.com/78664426/123469950-1bb6b180-d5ca-11eb-99ed-dd8e7a1f0240.png" />
 </p>
